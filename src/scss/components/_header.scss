@@ -1,0 +1,121 @@
+.header {
+  position: relative;
+  background: linear-gradient(90deg, #FF5C4D 0%, #EB469F 25%, #8341EF 72%, #3F68F9 100%);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  }
+
+  &-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 125px 0 0;
+    z-index: 1;
+  }
+
+  &-info {
+    max-width: 410px;
+    width: 100%;
+    z-index: 1;
+
+    &__title {
+      margin: 0;
+      margin-bottom: 48px;
+      font-family: 'YS Text', sans-serif;
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 72px;
+      letter-spacing: -0.02em;
+      color: var(--color-main);
+    }
+
+    &__descr {
+      margin: 0;
+      margin-bottom: 44px;
+      font-family: 'YS Text', sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 31px;
+      color: var(--color-main);
+    }
+
+    &__price {
+      position: relative;
+      display: inline-block;
+      padding: 0 12px 0px 0px;
+      background: radial-gradient(100% 100% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
+      border-radius: 50px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.63), rgba(255, 255, 255, 0.63));
+        border-radius: 50px;
+      }
+
+      &_now {
+        position: relative;
+        display: inline-block;
+        width: 79px;
+        height: 33px;
+        background: radial-gradient(100% 100% at 100% 0%, #E0B8FF 0%, #B6B9FF 100%);
+        border-radius: 50px;
+        text-align: center;
+      }
+
+      &_old {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+        color: #808080;
+      }
+    }
+  }
+
+  &-logo {
+    display: block;
+    margin-bottom: 72px;
+  }
+
+  &-image {
+    position: absolute;
+    top: 40px;
+    left: 250px;
+
+    &::before {
+      content: '';
+      bottom: 160px;
+      left: 230px;
+      width: 209px;
+      height: 208px;
+      position: absolute;
+      background-image: url(../../resources/header-img-text.svg);
+    }
+  }
+}
