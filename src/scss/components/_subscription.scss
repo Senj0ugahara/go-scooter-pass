@@ -1,0 +1,50 @@
+.subscription {
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &-image {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 140px;
+      left: 40px;
+      width: 412px;
+      height: 369px;
+      background-color: rgb(130, 65, 239, .29);
+      border-radius: 50%;
+      filter: blur(80px);
+      transform: rotate(220deg);
+    }
+  }
+
+  &-info {
+    max-width: 410px;
+    width: 100%;
+
+    &__descr {
+      margin: 0;
+      margin-bottom: 48px;
+      font-family: 'YS Text', sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      color: var(--color-main);
+    }
+  }
+
+  &-title {
+    margin: 0;
+    margin-bottom: 48px;
+    font-family: 'YS Text', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: var(--color-main);
+  }
+}

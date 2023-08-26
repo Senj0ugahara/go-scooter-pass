@@ -1,0 +1,33 @@
+.yplus {
+  margin-top: 90px;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-info {
+    max-width: 420px;
+    width: 100%;
+
+    &__descr {
+      margin: 0;
+      font-family: 'YS Text', sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      letter-spacing: 0px;
+      color: var(--color-main);
+    }
+  }
+
+  &-title {
+    font-family: 'YS Text', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: var(--color-main);
+  }
+}
